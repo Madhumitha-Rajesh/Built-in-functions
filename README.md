@@ -1,66 +1,43 @@
-# Built-in-functions
+#list methods
 
-numbers=[10,20,30,40,50]
-print("Original List:",numbers)
+l=[12,27,56,87,16,12]
+print("The original list:",l)
 
-numbers.append(60)
-print("After append(60):",numbers)
+l.append(25)
+print("List after appending 25:",l)
 
-numbers.insert(1,15)
-print("After insert(1,15):",numbers)
+l.insert(1,7)
+print("List after inserting 7 at index 1:",l)
 
-numbers.remove(30)
-print("After remove(30):",numbers)
+l.remove(56)
+print("List after removing 56:",l)
 
+l.pop(3)
+print("List after popping 87:",l)
 
-numbers.pop(2)
-print("After pop(2):",numbers)
+l.extend([4,5])
+print("List after extending [4,5]:",l)
 
-numbers.extend([70,80])
-print("After extend([70,80]:",numbers)
+print("Number of 12s in the list:",l.count(12))
 
-print("Count of 20:",numbers.count(20))
+print("Index of 16:",l.index(16))
 
-print("Index of 50:",numbers.index(50))
+l.sort()
+print("Sorted list:",l)
 
-numbers.sort()
-print("After sort():",numbers)
+l.reverse()
+print("Reversed list:",l)
 
-numbers.reverse()
-print("After reverse():",numbers)
+cp=l.copy()
+print("Copied list:",cp)
 
-numbers.reverse()
-print("After reverse():",numbers)
+print("Length of list:",len(l))
 
-copy_list=numbers.copy()
-print("Copied List:",len(numbers))
+print("Maximum element in the list:",max(l))
+print("Minimum element in the list:",min(l))
+print("Sum of list:",sum(l))
 
-print("Length of list:",len(numbers))
-
-print("Maximum value:",max(numbers))
-print("Minimum value:",min(numbers))
-print("Sum of list:",sum(numbers))
-
-numbers.clear()
-print("After clear():",numbers)
-
-Output:
-
-Original List: [10, 20, 30, 40, 50]
-After append(60): [10, 20, 30, 40, 50, 60]
-After insert(1,15): [10, 15, 20, 30, 40, 50, 60]
-After remove(30): [10, 15, 20, 40, 50, 60]
-After pop(2): [10, 15, 40, 50, 60]
-After extend([70,80]: [10, 15, 40, 50, 60, 70, 80]
-Count of 20: 0
-Index of 50: 3
-After sort(): [10, 15, 40, 50, 60, 70, 80]
-After reverse(): [80, 70, 60, 50, 40, 15, 10]
-After reverse(): [10, 15, 40, 50, 60, 70, 80]
-Copied List: 7
-Length of list: 7
-Maximum value: 80
-Minimum value: 10
-Sum of list: 325
-After clear(): []
+l.clear()
+print("List after clear:",l)
+      
 
